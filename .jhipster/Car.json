@@ -1,0 +1,36 @@
+{
+  "fluentMethods": true,
+  "clientRootFolder": "",
+  "relationships": [],
+  "fields": [
+    {
+      "fieldName": "carType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "brand",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "kwPower",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "usdPrice",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "isRented",
+      "fieldType": "Boolean"
+    }
+  ],
+  "changelogDate": "20210409120507",
+  "dto": "mapstruct",
+  "searchEngine": false,
+  "service": "serviceClass",
+  "entityTableName": "car",
+  "databaseType": "sql",
+  "readOnly": false,
+  "jpaMetamodelFiltering": false,
+  "pagination": "no"
+}

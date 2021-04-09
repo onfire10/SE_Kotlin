@@ -1,0 +1,46 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="car">
+            <h2><span>Car</span> {{ car.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span>Car Type</span></dt>
+                <dd>
+                    <span>{{ car.carType }}</span>
+                </dd>
+                <dt><span>Brand</span></dt>
+                <dd>
+                    <span>{{ car.brand }}</span>
+                </dd>
+                <dt><span>Kw Power</span></dt>
+                <dd>
+                    <span>{{ car.kwPower }}</span>
+                </dd>
+                <dt><span>Usd Price</span></dt>
+                <dd>
+                    <span>{{ car.usdPrice }}</span>
+                </dd>
+                <dt><span>Is Rented</span></dt>
+                <dd>
+                    <span>{{ car.isRented }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span>Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/car', car.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span>Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

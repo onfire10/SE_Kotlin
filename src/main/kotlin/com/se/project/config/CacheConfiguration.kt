@@ -53,6 +53,7 @@ class CacheConfiguration(
             createCache(cm, com.se.project.domain.User::class.java.name)
             createCache(cm, com.se.project.domain.Authority::class.java.name)
             createCache(cm, com.se.project.domain.User::class.java.name + ".authorities")
+            createCache(cm, com.se.project.domain.Car::class.java.name)
             // jhipster-needle-ehcache-add-entry
         }
     }
